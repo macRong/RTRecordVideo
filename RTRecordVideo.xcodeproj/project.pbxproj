@@ -1,0 +1,376 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7F03C0AB1830EDF800A1455A /* RTPreviewVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F03C0AA1830EDF800A1455A /* RTPreviewVideoViewController.m */; };
+		7F4B35C41821EF3B0071921A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F4B35C31821EF3B0071921A /* UIKit.framework */; };
+		7F4B35C61821EF3B0071921A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F4B35C51821EF3B0071921A /* Foundation.framework */; };
+		7F4B35C81821EF3B0071921A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F4B35C71821EF3B0071921A /* CoreGraphics.framework */; };
+		7F4B35CE1821EF3B0071921A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7F4B35CC1821EF3B0071921A /* InfoPlist.strings */; };
+		7F4B35D01821EF3B0071921A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4B35CF1821EF3B0071921A /* main.m */; };
+		7F4B35D41821EF3B0071921A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4B35D31821EF3B0071921A /* AppDelegate.m */; };
+		7F4B35D61821EF3B0071921A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F4B35D51821EF3B0071921A /* Default.png */; };
+		7F4B35D81821EF3B0071921A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F4B35D71821EF3B0071921A /* Default@2x.png */; };
+		7F4B35DA1821EF3B0071921A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F4B35D91821EF3B0071921A /* Default-568h@2x.png */; };
+		7F4B35E21821EFC60071921A /* RTRecordVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F4B35E11821EFC60071921A /* RTRecordVideoViewController.m */; };
+		7F567BDB1830B39500ADDFF1 /* RT_capture_change@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F567BDA1830B39500ADDFF1 /* RT_capture_change@2x.png */; };
+		7F567BDD1830DB3400ADDFF1 /* RT_closeCordVideo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F567BDC1830DB3400ADDFF1 /* RT_closeCordVideo@2x.png */; };
+		7F5AAD9E182C831300258F54 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F5AAD9D182C831300258F54 /* CoreImage.framework */; };
+		7FE28A8D18273A1100BD53BC /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FE28A8C18273A1100BD53BC /* AssetsLibrary.framework */; };
+		7FE28A8F18273A1600BD53BC /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FE28A8E18273A1600BD53BC /* MobileCoreServices.framework */; };
+		7FE28A9118273A2000BD53BC /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FE28A9018273A1F00BD53BC /* CoreVideo.framework */; };
+		7FE28A9318273A3500BD53BC /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FE28A9218273A3500BD53BC /* CoreMedia.framework */; };
+		7FE28A9518273A3F00BD53BC /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FE28A9418273A3F00BD53BC /* MediaPlayer.framework */; };
+		7FE28A9718273A5100BD53BC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FE28A9618273A5100BD53BC /* QuartzCore.framework */; };
+		7FE28A9918273A6500BD53BC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FE28A9818273A6500BD53BC /* AVFoundation.framework */; };
+		7FE28A9E18273AAD00BD53BC /* RTAVAssetStitcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE28A9B18273AAD00BD53BC /* RTAVAssetStitcher.m */; };
+		7FE28A9F18273AAD00BD53BC /* RTVideoCameraInputManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE28A9D18273AAD00BD53BC /* RTVideoCameraInputManager.m */; };
+		7FE28AA218273D2A00BD53BC /* RTVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE28AA118273D2A00BD53BC /* RTVideoView.m */; };
+		7FE28AA5182750EA00BD53BC /* RTBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FE28AA4182750EA00BD53BC /* RTBaseViewController.m */; };
+		7FE28AA818276CCC00BD53BC /* RT_endRecord@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FE28AA618276CCC00BD53BC /* RT_endRecord@2x.png */; };
+		7FE28AA918276CCC00BD53BC /* RT_startRecord@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FE28AA718276CCC00BD53BC /* RT_startRecord@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7F03C0A91830EDF800A1455A /* RTPreviewVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTPreviewVideoViewController.h; sourceTree = "<group>"; };
+		7F03C0AA1830EDF800A1455A /* RTPreviewVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTPreviewVideoViewController.m; sourceTree = "<group>"; };
+		7F4B35C01821EF3B0071921A /* RTRecordVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RTRecordVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F4B35C31821EF3B0071921A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7F4B35C51821EF3B0071921A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7F4B35C71821EF3B0071921A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7F4B35CB1821EF3B0071921A /* RTRecordVideo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RTRecordVideo-Info.plist"; sourceTree = "<group>"; };
+		7F4B35CD1821EF3B0071921A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7F4B35CF1821EF3B0071921A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7F4B35D11821EF3B0071921A /* RTRecordVideo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RTRecordVideo-Prefix.pch"; sourceTree = "<group>"; };
+		7F4B35D21821EF3B0071921A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7F4B35D31821EF3B0071921A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7F4B35D51821EF3B0071921A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		7F4B35D71821EF3B0071921A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		7F4B35D91821EF3B0071921A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		7F4B35E01821EFC60071921A /* RTRecordVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTRecordVideoViewController.h; sourceTree = "<group>"; };
+		7F4B35E11821EFC60071921A /* RTRecordVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTRecordVideoViewController.m; sourceTree = "<group>"; };
+		7F567BDA1830B39500ADDFF1 /* RT_capture_change@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RT_capture_change@2x.png"; sourceTree = "<group>"; };
+		7F567BDC1830DB3400ADDFF1 /* RT_closeCordVideo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RT_closeCordVideo@2x.png"; sourceTree = "<group>"; };
+		7F5AAD9D182C831300258F54 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		7FE28A8C18273A1100BD53BC /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		7FE28A8E18273A1600BD53BC /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		7FE28A9018273A1F00BD53BC /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		7FE28A9218273A3500BD53BC /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		7FE28A9418273A3F00BD53BC /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		7FE28A9618273A5100BD53BC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		7FE28A9818273A6500BD53BC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		7FE28A9A18273AAD00BD53BC /* RTAVAssetStitcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTAVAssetStitcher.h; sourceTree = "<group>"; };
+		7FE28A9B18273AAD00BD53BC /* RTAVAssetStitcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTAVAssetStitcher.m; sourceTree = "<group>"; };
+		7FE28A9C18273AAD00BD53BC /* RTVideoCameraInputManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTVideoCameraInputManager.h; sourceTree = "<group>"; };
+		7FE28A9D18273AAD00BD53BC /* RTVideoCameraInputManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTVideoCameraInputManager.m; sourceTree = "<group>"; };
+		7FE28AA018273D2A00BD53BC /* RTVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTVideoView.h; sourceTree = "<group>"; };
+		7FE28AA118273D2A00BD53BC /* RTVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTVideoView.m; sourceTree = "<group>"; };
+		7FE28AA3182750EA00BD53BC /* RTBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTBaseViewController.h; sourceTree = "<group>"; };
+		7FE28AA4182750EA00BD53BC /* RTBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTBaseViewController.m; sourceTree = "<group>"; };
+		7FE28AA618276CCC00BD53BC /* RT_endRecord@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RT_endRecord@2x.png"; sourceTree = "<group>"; };
+		7FE28AA718276CCC00BD53BC /* RT_startRecord@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RT_startRecord@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7F4B35BD1821EF3B0071921A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F5AAD9E182C831300258F54 /* CoreImage.framework in Frameworks */,
+				7FE28A9918273A6500BD53BC /* AVFoundation.framework in Frameworks */,
+				7FE28A9718273A5100BD53BC /* QuartzCore.framework in Frameworks */,
+				7FE28A9518273A3F00BD53BC /* MediaPlayer.framework in Frameworks */,
+				7FE28A9318273A3500BD53BC /* CoreMedia.framework in Frameworks */,
+				7FE28A9118273A2000BD53BC /* CoreVideo.framework in Frameworks */,
+				7FE28A8F18273A1600BD53BC /* MobileCoreServices.framework in Frameworks */,
+				7FE28A8D18273A1100BD53BC /* AssetsLibrary.framework in Frameworks */,
+				7F4B35C41821EF3B0071921A /* UIKit.framework in Frameworks */,
+				7F4B35C61821EF3B0071921A /* Foundation.framework in Frameworks */,
+				7F4B35C81821EF3B0071921A /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7F4B35B71821EF3B0071921A = {
+			isa = PBXGroup;
+			children = (
+				7F4B35C91821EF3B0071921A /* RTRecordVideo */,
+				7F4B35C21821EF3B0071921A /* Frameworks */,
+				7F4B35C11821EF3B0071921A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7F4B35C11821EF3B0071921A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7F4B35C01821EF3B0071921A /* RTRecordVideo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7F4B35C21821EF3B0071921A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F5AAD9D182C831300258F54 /* CoreImage.framework */,
+				7FE28A9818273A6500BD53BC /* AVFoundation.framework */,
+				7FE28A9618273A5100BD53BC /* QuartzCore.framework */,
+				7FE28A9418273A3F00BD53BC /* MediaPlayer.framework */,
+				7FE28A9218273A3500BD53BC /* CoreMedia.framework */,
+				7FE28A9018273A1F00BD53BC /* CoreVideo.framework */,
+				7FE28A8E18273A1600BD53BC /* MobileCoreServices.framework */,
+				7FE28A8C18273A1100BD53BC /* AssetsLibrary.framework */,
+				7F4B35C31821EF3B0071921A /* UIKit.framework */,
+				7F4B35C51821EF3B0071921A /* Foundation.framework */,
+				7F4B35C71821EF3B0071921A /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7F4B35C91821EF3B0071921A /* RTRecordVideo */ = {
+			isa = PBXGroup;
+			children = (
+				7F567BDC1830DB3400ADDFF1 /* RT_closeCordVideo@2x.png */,
+				7FE28AA618276CCC00BD53BC /* RT_endRecord@2x.png */,
+				7FE28AA718276CCC00BD53BC /* RT_startRecord@2x.png */,
+				7F567BDA1830B39500ADDFF1 /* RT_capture_change@2x.png */,
+				7F4B35D21821EF3B0071921A /* AppDelegate.h */,
+				7F4B35D31821EF3B0071921A /* AppDelegate.m */,
+				7FE28AA3182750EA00BD53BC /* RTBaseViewController.h */,
+				7FE28AA4182750EA00BD53BC /* RTBaseViewController.m */,
+				7F4B35E01821EFC60071921A /* RTRecordVideoViewController.h */,
+				7F4B35E11821EFC60071921A /* RTRecordVideoViewController.m */,
+				7FE28A9A18273AAD00BD53BC /* RTAVAssetStitcher.h */,
+				7FE28A9B18273AAD00BD53BC /* RTAVAssetStitcher.m */,
+				7FE28A9C18273AAD00BD53BC /* RTVideoCameraInputManager.h */,
+				7FE28A9D18273AAD00BD53BC /* RTVideoCameraInputManager.m */,
+				7FE28AA018273D2A00BD53BC /* RTVideoView.h */,
+				7FE28AA118273D2A00BD53BC /* RTVideoView.m */,
+				7F03C0A91830EDF800A1455A /* RTPreviewVideoViewController.h */,
+				7F03C0AA1830EDF800A1455A /* RTPreviewVideoViewController.m */,
+				7F4B35CA1821EF3B0071921A /* Supporting Files */,
+			);
+			path = RTRecordVideo;
+			sourceTree = "<group>";
+		};
+		7F4B35CA1821EF3B0071921A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7F4B35CB1821EF3B0071921A /* RTRecordVideo-Info.plist */,
+				7F4B35CC1821EF3B0071921A /* InfoPlist.strings */,
+				7F4B35CF1821EF3B0071921A /* main.m */,
+				7F4B35D11821EF3B0071921A /* RTRecordVideo-Prefix.pch */,
+				7F4B35D51821EF3B0071921A /* Default.png */,
+				7F4B35D71821EF3B0071921A /* Default@2x.png */,
+				7F4B35D91821EF3B0071921A /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7F4B35BF1821EF3B0071921A /* RTRecordVideo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F4B35DD1821EF3B0071921A /* Build configuration list for PBXNativeTarget "RTRecordVideo" */;
+			buildPhases = (
+				7F4B35BC1821EF3B0071921A /* Sources */,
+				7F4B35BD1821EF3B0071921A /* Frameworks */,
+				7F4B35BE1821EF3B0071921A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RTRecordVideo;
+			productName = RTRecordVideo;
+			productReference = 7F4B35C01821EF3B0071921A /* RTRecordVideo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7F4B35B81821EF3B0071921A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = RongTian;
+			};
+			buildConfigurationList = 7F4B35BB1821EF3B0071921A /* Build configuration list for PBXProject "RTRecordVideo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7F4B35B71821EF3B0071921A;
+			productRefGroup = 7F4B35C11821EF3B0071921A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7F4B35BF1821EF3B0071921A /* RTRecordVideo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7F4B35BE1821EF3B0071921A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F4B35CE1821EF3B0071921A /* InfoPlist.strings in Resources */,
+				7F4B35D61821EF3B0071921A /* Default.png in Resources */,
+				7F4B35D81821EF3B0071921A /* Default@2x.png in Resources */,
+				7F4B35DA1821EF3B0071921A /* Default-568h@2x.png in Resources */,
+				7FE28AA818276CCC00BD53BC /* RT_endRecord@2x.png in Resources */,
+				7FE28AA918276CCC00BD53BC /* RT_startRecord@2x.png in Resources */,
+				7F567BDB1830B39500ADDFF1 /* RT_capture_change@2x.png in Resources */,
+				7F567BDD1830DB3400ADDFF1 /* RT_closeCordVideo@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7F4B35BC1821EF3B0071921A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F4B35D01821EF3B0071921A /* main.m in Sources */,
+				7F4B35D41821EF3B0071921A /* AppDelegate.m in Sources */,
+				7F4B35E21821EFC60071921A /* RTRecordVideoViewController.m in Sources */,
+				7FE28A9E18273AAD00BD53BC /* RTAVAssetStitcher.m in Sources */,
+				7FE28A9F18273AAD00BD53BC /* RTVideoCameraInputManager.m in Sources */,
+				7FE28AA218273D2A00BD53BC /* RTVideoView.m in Sources */,
+				7FE28AA5182750EA00BD53BC /* RTBaseViewController.m in Sources */,
+				7F03C0AB1830EDF800A1455A /* RTPreviewVideoViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7F4B35CC1821EF3B0071921A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F4B35CD1821EF3B0071921A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7F4B35DB1821EF3B0071921A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7F4B35DC1821EF3B0071921A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7F4B35DE1821EF3B0071921A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RTRecordVideo/RTRecordVideo-Prefix.pch";
+				INFOPLIST_FILE = "RTRecordVideo/RTRecordVideo-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shengshui.record;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7F4B35DF1821EF3B0071921A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RTRecordVideo/RTRecordVideo-Prefix.pch";
+				INFOPLIST_FILE = "RTRecordVideo/RTRecordVideo-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shengshui.record;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7F4B35BB1821EF3B0071921A /* Build configuration list for PBXProject "RTRecordVideo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F4B35DB1821EF3B0071921A /* Debug */,
+				7F4B35DC1821EF3B0071921A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F4B35DD1821EF3B0071921A /* Build configuration list for PBXNativeTarget "RTRecordVideo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F4B35DE1821EF3B0071921A /* Debug */,
+				7F4B35DF1821EF3B0071921A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7F4B35B81821EF3B0071921A /* Project object */;
+}
